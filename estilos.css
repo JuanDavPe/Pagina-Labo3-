@@ -1,0 +1,310 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body{
+    background: #5d6d7e ;
+    min-height: 100vh;
+    font-family: 'calibri';
+    padding: 0;
+}
+
+header{
+    background: #fdfefe ;
+    padding-top: 1%;
+	padding-right: 8%;
+	padding-bottom: 1%;
+	padding-left: 8%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu {
+    width: 1200px;
+    margin: 1 auto;
+    
+}
+
+img {
+    width: 180px;
+    height: 110px;
+    float: left;
+    padding: 7px;
+}
+
+nav {
+    float:right;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 100px;
+    padding: 30px 0;
+    float:left;
+}
+
+nav ul li a {
+    text-decoration: double;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.8rem;
+	padding-right: 0rem;
+	text-transform: uppercase;
+}
+
+nav ul li a:hover{
+	text-decoration: underline;
+	font-weight: 800;
+}
+
+
+
+section{
+	max-width: 1500px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.texto{
+    font-family: "Comic Neue", cursive;
+    margin-top: 30px;    
+}
+
+
+
+.principal{
+	width: 100%;
+	height: 800px;
+	background-image: url(Imagenes/principal2.jpg);
+    background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+    border-radius: 25px;
+    
+}
+
+.muestra {
+    padding: 15px;
+    width: 350px;
+    height: 250px;
+    margin: 0 5px;
+    border-radius: 25px;
+}
+
+.contenedor{
+    
+    margin-top: 20px;
+    display: flex;
+    
+    justify-content: center;
+
+}
+
+div{
+    line-height: 30px;
+}
+.personajes {
+    margin: 150px auto;
+    width: 70%;    
+}
+.personajes img {
+    max-width: 320px;
+    float: left;
+    border: 3px solid #ffffff;
+    border-radius: 10px ;
+    margin-right: 15px;
+}
+
+.texto-personajes{
+    font-family: "Comic Neue", cursive;
+    margin-top: 30px;    
+}
+
+.texto-personajes h2 {
+    font-size: 42px;
+}
+
+.texto-personajes p {
+    font-size: 16px;
+}
+
+
+.secundario{
+	margin-top: 5%;
+	display: flex;
+}
+.secundario div{
+	width: 33%;
+	padding: 2%;
+	text-align: center;
+}
+.secundario div a img{
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 350px;
+}
+footer img{
+	max-width: 4rem;
+	width: 100%;
+	height: auto;
+	margin-right: .5%;
+    border-radius: 25px;
+}
+h1{
+	text-align: center;
+	margin-top: 1.5em;
+}
+.form{
+	width:100%;
+	height:440px;
+	background:#e6e6e6;
+	border-radius:8px;
+	box-shadow:0 0 40px -10px #000;
+	margin:calc(1vh) auto;
+	padding:10px 30px;
+	box-sizing:border-box;
+	font-family:'Montserrat',sans-serif;
+	font-size: 14px;
+	position:relative
+}
+
+h3.contacto{
+	margin:10px 0;
+	padding-bottom:10px;
+	width:150px;
+	color:#78788c;
+	border-bottom:3px solid #78788c;
+	font-size: large;
+}
+
+input{
+	width:100%;
+	margin-top: 30px;
+	padding:10px;
+	box-sizing:border-box;
+	background:none;
+	outline:none;
+	resize:none;
+	border:0;
+	transition:all .3s;
+	border-bottom:2px solid #bebed2
+}
+
+input:focus{
+	border-bottom:2px solid #78788c
+}
+
+button{
+	padding:8px 12px;
+	margin:50px 0 0;
+	border:2px solid #78788c;
+	background:0;color:#5a5a6e;
+	cursor:pointer;
+	transition:all .3s;
+}
+
+button:hover{
+	background:#78788c;
+	color:#fff;
+}
+
+div.pie_contacto{
+	position:absolute;
+	bottom:-15px;
+	right:30%;
+	background: #fdfefe;
+	color:#5a5a6e;
+	width:420px;
+	padding:16px 4px 16px 0;
+	border-radius:6px;
+	box-shadow:10px 10px 40px -14px #000;
+}
+
+div.pie_contacto span{
+	margin:0 5px 0 15px;
+}
+
+@media (max-width: 480px) { 
+	header{
+		align-items: center;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		background-color: #ffffff;
+		position: sticky;
+		top: 0;
+		z-index: 1;
+	}
+	header div, header a {
+		flex: 1 0 50%;
+	}
+	header nav {
+		flex-basis: 100%;
+	}
+	
+	nav ul {
+		display: none;
+	}
+	nav.responsive ul {
+		display: block;
+	}
+	nav.responsive ul li {
+		display: block;
+		text-align: center;
+		padding: 0.5rem;
+	}
+	nav.responsive ul li a {
+		padding-right: 0;
+	}
+	section{
+		max-width: 480px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.principal{
+		height: 250px;
+		padding: 10%;
+	}
+	.secundario{
+		margin-top: 1%;
+		display: block;
+	}
+	.secundario div{
+		margin-right: auto;
+		margin-left: auto;
+		width: 90%;
+	}
+	.secundario div a img{
+		margin-bottom: 1rem;
+	}
+	h2{
+		font-size: 1rem;
+	}
+	h4{
+		font-size: 1rem;
+	}
+	footer{
+		height: 80px;
+		justify-content: space-evenly;
+	}
+	footer img{
+		max-width: 3rem;
+	}
+	}
