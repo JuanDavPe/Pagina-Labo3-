@@ -1,87 +1,67 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: "Comic Neue", cursive;
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-body{
-    background: #5d6d7e ;
-    min-height: 100vh;
-    font-family: 'calibri';
-    padding: 0;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #fefefe;
 }
 
-header{
-    background: #fdfefe ;
-    padding-top: 1%;
-	padding-right: 8%;
-	padding-bottom: 1%;
-	padding-left: 8%;
-	display: flex;
-	justify-content: space-between;
+.logo {
+    max-width: 10rem;
 }
 
-.menu {
-    width: 1200px;
-    margin: 1 auto;
-    
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
 }
 
-img {
-    width: 180px;
-    height: 110px;
-    float: left;
-    padding: 7px;
+.nav-list li a {
+    text-decoration: none;
+    color: #5d6d7e;
+    font-size: 1.5rem;
+    padding-right: 2rem;
 }
 
-nav {
-    float:right;
+.abrir-menu,
+.cerrar-menu {
+    display: none;
 }
 
-nav ul li {
-    list-style: none;
-    margin-left: 100px;
-    padding: 30px 0;
-    float:left;
+h1{
+    font-weight: 300;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+    color: #5d6d7e;
 }
 
-nav ul li a {
-    text-decoration: double;
-    color: black;
-    font-weight: bolder;
-    font-size: 1.8rem;
-	padding-right: 0rem;
-	text-transform: uppercase;
+.linea {
+    background: #5d6d7e;
+    height: 8px;
+    width: 100%;
+    display: block;
 }
-
-nav ul li a:hover{
-	text-decoration: underline;
-	font-weight: 800;
-}
-
-
 
 section{
-	max-width: 1500px;
-	width: 100%;
+	max-width: 1300px;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-
-.texto{
-    font-family: "Comic Neue", cursive;
-    margin-top: 30px;    
-}
-
-
-
 .principal{
 	width: 100%;
-	height: 800px;
-	background-image: url(Imagenes/principal2.jpg);
+	height: 550px;
+	background-image: url(Imagenes/Principal.jpg);
     background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -89,33 +69,50 @@ section{
 	justify-content: center;
 	align-items: center;
 	color: #ffffff;
-    border-radius: 25px;
-    
+    border-radius: 25px;  
+    margin-top: 20px;
 }
 
+h2{
+    font-weight: 300;
+    text-align: left;
+    padding: 10px 0;
+    font-size: 30px;
+    color: #5d6d7e;
+}
+
+
+.texto{
+    font-family: "Comic Neue", cursive;
+    color: #5d6d7e;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 30px;  
+    margin-left: 20px;
+    margin-right: 20px;    
+}
 .muestra {
-    padding: 15px;
+    padding: 10px;
     width: 350px;
     height: 250px;
-    margin: 0 5px;
+    margin: 0 15px;
     border-radius: 25px;
 }
 
-.contenedor{
-    
+.contenedor{    
     margin-top: 20px;
-    display: flex;
-    
+    display: flex;    
     justify-content: center;
-
 }
 
 div{
     line-height: 30px;
 }
+
 .personajes {
-    margin: 150px auto;
-    width: 70%;    
+    margin-top: 20px;
+    display: flex;    
+    justify-content: center;
 }
 .personajes img {
     max-width: 320px;
@@ -125,19 +122,20 @@ div{
     margin-right: 15px;
 }
 
-.texto-personajes{
-    font-family: "Comic Neue", cursive;
-    margin-top: 30px;    
+.principal2{
+	width: 100%;
+	height: 800px;
+	background-image: url(Imagenes/galeria/imagen9.jpg);
+    background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+    border-radius: 25px;  
+    margin-top: 20px;
 }
-
-.texto-personajes h2 {
-    font-size: 42px;
-}
-
-.texto-personajes p {
-    font-size: 16px;
-}
-
 
 .secundario{
 	margin-top: 5%;
@@ -152,25 +150,12 @@ div{
 	width: 100%;
 	margin-bottom: 2rem;
 }
+h4{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
 
 
-footer{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 350px;
-}
-footer img{
-	max-width: 4rem;
-	width: 100%;
-	height: auto;
-	margin-right: .5%;
-    border-radius: 25px;
-}
-h1{
-	text-align: center;
-	margin-top: 1.5em;
-}
 .form{
 	width:100%;
 	height:440px;
@@ -229,8 +214,8 @@ div.pie_contacto{
 	position:absolute;
 	bottom:-15px;
 	right:30%;
-	background: #fdfefe;
-	color:#5a5a6e;
+	background:#50505a;
+	color:#fff;
 	width:420px;
 	padding:16px 4px 16px 0;
 	border-radius:6px;
@@ -241,70 +226,142 @@ div.pie_contacto span{
 	margin:0 5px 0 15px;
 }
 
-@media (max-width: 480px) { 
-	header{
-		align-items: center;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		background-color: #ffffff;
-		position: sticky;
-		top: 0;
-		z-index: 1;
-	}
-	header div, header a {
-		flex: 1 0 50%;
-	}
-	header nav {
-		flex-basis: 100%;
-	}
-	
-	nav ul {
-		display: none;
-	}
-	nav.responsive ul {
-		display: block;
-	}
-	nav.responsive ul li {
-		display: block;
-		text-align: center;
-		padding: 0.5rem;
-	}
-	nav.responsive ul li a {
-		padding-right: 0;
-	}
-	section{
-		max-width: 480px;
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.principal{
-		height: 250px;
-		padding: 10%;
-	}
-	.secundario{
-		margin-top: 1%;
-		display: block;
-	}
-	.secundario div{
-		margin-right: auto;
-		margin-left: auto;
-		width: 90%;
-	}
-	.secundario div a img{
-		margin-bottom: 1rem;
-	}
-	h2{
-		font-size: 1rem;
-	}
-	h4{
-		font-size: 1rem;
-	}
-	footer{
-		height: 80px;
-		justify-content: space-evenly;
-	}
-	footer img{
-		max-width: 3rem;
-	}
-	}
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 350px;        
+}
+
+footer img{
+	max-width: 5rem;
+	width: 100%;
+	height: auto;
+	margin-right: .5%;
+    padding: 10px;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+
+    section{
+        max-width: 480px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .principal{
+        display: block;
+        height: 250px;
+        padding: 20%;              
+    }
+    .texto{
+        font-size: 1rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    .contenedor{
+        margin-top: 1%;
+        display: block;
+    }
+
+    .personajes{
+        margin-top: 2%;
+        display: block;
+        padding: 2rem;
+    }
+    
+    .personajes img {
+        margin-bottom: 1rem;
+        justify-content: center;
+    }
+    .principal2{
+        display: block;
+        height: 250px;
+        padding: 20%;              
+    }
+
+    .secundario{
+        margin-top: 1%;
+        display: block;
+    }
+    .secundario div{
+        margin-right: auto;
+        margin-left: auto;
+        width: 90%;        
+    }
+    .secundario div a img{
+        margin-bottom: 1rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+
+    .pie_contacto{
+        justify-content: center;
+        margin-top: 1%;
+        display: block;
+    }
+
+    footer{
+        height: 80px;
+        justify-content: space-evenly;
+    }
+    footer img{
+        max-width: 3rem;
+    }
+   
+}
